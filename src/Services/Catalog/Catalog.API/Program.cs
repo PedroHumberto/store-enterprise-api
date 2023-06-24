@@ -1,4 +1,6 @@
 using Catalog.API.Data;
+using Catalog.API.Data.Repository;
+using Catalog.API.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,10 @@ builder.Services.AddSwaggerGen();
 //DbContext
 var connectionString = builder.Configuration.GetConnectionString("DbConnectionString");
 builder.Services.AddDbContext<CatalogContext>(options => options.UseSqlServer(connectionString));
+
+//Dependecy Injection
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<CatalogContext>();
 
 
 var app = builder.Build();

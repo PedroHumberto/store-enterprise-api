@@ -1,9 +1,10 @@
-﻿using Core.APP.DomainObjects;
+﻿using Core.APP.Data;
+using Core.APP.DomainObjects;
 using System;
 
 namespace Catalog.API.Models
 {
-    public class Product : Entity
+    public class Product : Entity, IAggregateRoot
     {
         public string Name {get; set;}
         public string Description { get; set; }

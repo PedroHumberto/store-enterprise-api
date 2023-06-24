@@ -23,4 +23,8 @@
     <ProjectReference Include="..\..\..\Building Blocks\Core\Core.APP\Core.APP.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

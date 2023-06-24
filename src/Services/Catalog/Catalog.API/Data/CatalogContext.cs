@@ -1,16 +1,19 @@
 ﻿using Catalog.API.Models;
+using Core.APP.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Catalog.API.Data
 {
-    public class CatalogContext : DbContext
+    public class CatalogContext : DbContext, IUnitOfWork
     {
         public CatalogContext(DbContextOptions<CatalogContext> options) : base (options)
         {
             
         }
 
-        DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,6 +25,12 @@ namespace Catalog.API.Data
 
             //Mapeia a entidade de mapeamento
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogContext).Assembly);
-        } 
+        }
+
+        public async Task<bool> Commit()
+        {
+            //Se o commit deu certo ele vai retornar 1, não preciso ficar dando commit nos dados direto no repositorio
+            return await base.SaveChangesAsync() > 0;
+        }
     }
 }
