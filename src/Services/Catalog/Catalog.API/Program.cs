@@ -1,40 +1,36 @@
+using Catalog.API.Configuration;
 using Catalog.API.Data;
 using Catalog.API.Data.Repository;
 using Catalog.API.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+//Environment configuration 
+IWebHostEnvironment environment = builder.Environment;
+builder.Configuration.SetBasePath(environment.ContentRootPath)
+    .AddJsonFile("appsettings.json", true, true)
+    .AddJsonFile($"appsetings.{environment.EnvironmentName}.json", true, true)
+    .AddEnvironmentVariables();
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+if (environment.IsDevelopment())
+{
+    builder.Configuration.AddUserSecrets<Program>();
+}
+
+builder.Services.AddApiConfiguration(builder.Configuration);
+
+builder.Services.AddSwaggerConfiguration();
+
+builder.Services.RegisterServices();
 
 
-//DbContext
-var connectionString = builder.Configuration.GetConnectionString("DbConnectionString");
-builder.Services.AddDbContext<CatalogContext>(options => options.UseSqlServer(connectionString));
-
-//Dependecy Injection
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<CatalogContext>();
-
+//App builder
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+app.UseApiConfiguration(app.Environment);
+app.UseSwaggerConfiguration();
 
 app.Run();
