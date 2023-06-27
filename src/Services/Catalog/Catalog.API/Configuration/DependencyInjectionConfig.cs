@@ -8,10 +8,6 @@ namespace Catalog.API.Configuration
     {
         public static void RegisterServices(this IServiceCollection services)
         {
-
-
-
-            //Dependecy Injection
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<CatalogContext>();
         }

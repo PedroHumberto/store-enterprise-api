@@ -1,6 +1,7 @@
 ﻿using Catalog.API.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using StoreEnterprise.WebAPI.CORE.Identity;
 
 namespace Catalog.API.Configuration
 {
@@ -40,6 +41,8 @@ namespace Catalog.API.Configuration
             app.UseRouting();
 
             app.UseCors("Total");
+
+            app.UseAuthConfiguration();
 
             app.UseAuthorization();
 

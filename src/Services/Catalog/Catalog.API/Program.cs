@@ -4,6 +4,7 @@ using Catalog.API.Data.Repository;
 using Catalog.API.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using StoreEnterprise.WebAPI.CORE.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,8 @@ if (environment.IsDevelopment())
 }
 
 builder.Services.AddApiConfiguration(builder.Configuration);
+
+builder.Services.AddJwtConfiguration(builder.Configuration);
 
 builder.Services.AddSwaggerConfiguration();
 

@@ -76,3 +76,6 @@ D:\Programming\ASP.NET\PORTFOLIO\store_app\StoreEnterpriseApp\src\Services\Catal
 D:\Programming\ASP.NET\PORTFOLIO\store_app\StoreEnterpriseApp\src\Services\Catalog\Catalog.API\obj\Debug\net7.0\Catalog.API.pdb
 D:\Programming\ASP.NET\PORTFOLIO\store_app\StoreEnterpriseApp\src\Services\Catalog\Catalog.API\obj\Debug\net7.0\Catalog.API.genruntimeconfig.cache
 D:\Programming\ASP.NET\PORTFOLIO\store_app\StoreEnterpriseApp\src\Services\Catalog\Catalog.API\obj\Debug\net7.0\ref\Catalog.API.dll
+D:\Programming\ASP.NET\PORTFOLIO\store_app\StoreEnterpriseApp\src\Services\Catalog\Catalog.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Programming\ASP.NET\PORTFOLIO\store_app\StoreEnterpriseApp\src\Services\Catalog\Catalog.API\bin\Debug\net7.0\StoreEnterprise.WebAPI.CORE.dll
+D:\Programming\ASP.NET\PORTFOLIO\store_app\StoreEnterpriseApp\src\Services\Catalog\Catalog.API\bin\Debug\net7.0\StoreEnterprise.WebAPI.CORE.pdb

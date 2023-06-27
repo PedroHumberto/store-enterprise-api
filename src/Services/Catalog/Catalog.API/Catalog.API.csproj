@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Building Blocks\Core\Core.APP\Core.APP.csproj" />
+    <ProjectReference Include="..\..\..\Building Blocks\Services\StoreEnterprise.WebAPI.CORE\StoreEnterprise.WebAPI.CORE.csproj" />
   </ItemGroup>
 
 </Project>
