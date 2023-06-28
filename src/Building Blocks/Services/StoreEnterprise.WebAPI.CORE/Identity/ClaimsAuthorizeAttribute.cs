@@ -5,8 +5,10 @@ namespace StoreEnterprise.WebAPI.CORE.Identity
 {
     public class ClaimsAuthorizeAttribute : TypeFilterAttribute
     {
-        public ClaimsAuthorizeAttribute(string claimName, string claimValue) : base(typeof(RequisitoClaimFilter))
+        //Atributo que vai decorar um metodo. Necessario um filtro
+        public ClaimsAuthorizeAttribute(string claimName, string claimValue) : base(typeof(FilterClaimRequistion))
         {
+            //FilterClaimRequistion -> faz a validação do usuario, se está autenticado.
             Arguments = new object[] { new Claim(claimName, claimValue) };
         }
     }
