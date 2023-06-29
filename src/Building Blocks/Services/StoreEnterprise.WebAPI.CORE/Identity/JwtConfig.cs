@@ -36,8 +36,8 @@ namespace StoreEnterprise.WebAPI.CORE.Identity
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidAudience = appSettings.ValidoEm,
-                    ValidIssuer = appSettings.Emissor
+                    ValidAudience = appSettings.Audience,
+                    ValidIssuer = appSettings.Issuer
                 };
             });
         }

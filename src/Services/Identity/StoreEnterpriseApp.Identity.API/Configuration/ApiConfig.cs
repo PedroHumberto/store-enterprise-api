@@ -1,28 +1,23 @@
-﻿using StoreEnterprise.WebAPI.CORE.Identity;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using StoreEnterprise.WebAPI.CORE.Identity;
+using StoreEnterpriseApp.Identity.API.Data;
+using System;
+using System.Text;
 
 namespace StoreEnterpriseApp.Identity.API.Configuration
 {
     public static class ApiConfig
     {
-        public static void AddApiConfiguration(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddApiConfiguration(this IServiceCollection services)
         {
-            var connectionString = configuration.GetConnectionString("DbIdentity");
+            services.AddControllers();
 
-
-            //API vai ser acessada por outros endpoints: CORS
-            services.AddCors(opts =>
-            {
-                opts.AddPolicy("Total", builder =>
-                    builder
-                        .AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
-            });
+            return services;
         }
 
-        public static void UseApiConfiguration(this IApplicationBuilder app, IWebHostEnvironment env)
+        public static IApplicationBuilder UseApiConfiguration(this IApplicationBuilder app, IWebHostEnvironment env)
         {
-            // Configure the HTTP request pipeline.
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -32,17 +27,15 @@ namespace StoreEnterpriseApp.Identity.API.Configuration
 
             app.UseRouting();
 
-            app.UseCors("Total");
-
             app.UseAuthConfiguration();
-
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
 
+            return app;
         }
     }
 }
+
