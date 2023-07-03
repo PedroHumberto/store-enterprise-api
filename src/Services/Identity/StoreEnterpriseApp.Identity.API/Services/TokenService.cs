@@ -8,7 +8,7 @@ using System.Text;
 
 namespace StoreEnterpriseApp.Identity.API.Services
 {
-    public class TokenService
+    public class TokenService :ITokenService
     {
         private readonly AppSettings _appSettings;
 

@@ -12,10 +12,10 @@ namespace StoreEnterpriseApp.Identity.API.Controllers
     {
         private readonly SignInManager<IdentityUser> _singInManager;
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly TokenService _tokenService;
+        private readonly ITokenService _tokenService;
 
 
-        public AuthController(SignInManager<IdentityUser> singInManager, UserManager<IdentityUser> userManager, TokenService tokenService)
+        public AuthController(SignInManager<IdentityUser> singInManager, UserManager<IdentityUser> userManager, ITokenService tokenService)
         {
             _singInManager = singInManager;
             _userManager = userManager;
