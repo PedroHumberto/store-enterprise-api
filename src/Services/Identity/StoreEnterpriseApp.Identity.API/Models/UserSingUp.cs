@@ -2,7 +2,7 @@
 
 namespace StoreEnterpriseApp.Identity.API.Models
 {
-    public class UserRegister
+    public class UserSingUp
     {
         [Required(ErrorMessage = "The field {0} it's necessary")]
         [EmailAddress(ErrorMessage = "The Field {0} is invalid")]

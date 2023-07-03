@@ -18,6 +18,7 @@ namespace StoreEnterpriseApp.Identity.API.Configuration
 
         public static IApplicationBuilder UseApiConfiguration(this IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // Configure the HTTP request pipeline.
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -27,7 +28,11 @@ namespace StoreEnterpriseApp.Identity.API.Configuration
 
             app.UseRouting();
 
+            app.UseCors("Total");
+
             app.UseAuthConfiguration();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

@@ -20,6 +20,9 @@ builder.Services.AddIdentityConfiguration(builder.Configuration);
 
 builder.Services.AddApiConfiguration();
 
+builder.Services.AddSwaggerConfiguration();
+//FALTA INJEÇÃO DE DEPENDENCIA DO TOKEN SERVICE
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -28,6 +31,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseApiConfiguration(app.Environment);
+app.UseSwaggerConfiguration();
 
 
 app.Run();
