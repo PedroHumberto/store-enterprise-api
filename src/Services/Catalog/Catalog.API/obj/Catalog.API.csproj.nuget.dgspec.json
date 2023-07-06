@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj": {}
+    "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj": {}
   },
   "projects": {
-    "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj": {
+    "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
+        "projectUniqueName": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
         "projectName": "Core.APP",
-        "projectPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
+        "projectPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\obj\\",
+        "outputPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj": {
+    "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj",
+        "projectUniqueName": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj",
         "projectName": "StoreEnterprise.WebAPI.CORE",
-        "projectPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj",
+        "projectPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\obj\\",
+        "outputPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,14 +120,14 @@
         }
       }
     },
-    "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj": {
+    "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+        "projectUniqueName": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
         "projectName": "Catalog.API",
-        "projectPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+        "projectPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\obj\\",
+        "outputPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -144,11 +144,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj": {
-                "projectPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj"
+              "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj": {
+                "projectPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj"
               },
-              "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj": {
-                "projectPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj"
+              "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj": {
+                "projectPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Services\\StoreEnterprise.WebAPI.CORE\\StoreEnterprise.WebAPI.CORE.csproj"
               }
             }
           }

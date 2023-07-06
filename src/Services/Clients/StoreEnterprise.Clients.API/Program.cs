@@ -1,25 +1,37 @@
+using StoreEnterprise.Clients.API.Configuration;
+using StoreEnterprise.WebAPI.CORE.Identity;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+//Environment configuration 
+IWebHostEnvironment environment = builder.Environment;
+builder.Configuration.SetBasePath(environment.ContentRootPath)
+    .AddJsonFile("appsettings.json", true, true)
+    .AddJsonFile($"appsetings.{environment.EnvironmentName}.json", true, true)
+    .AddEnvironmentVariables();
 
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    builder.Configuration.AddUserSecrets<Program>();
 }
 
-app.UseHttpsRedirection();
 
-app.UseAuthorization();
+builder.Services.AddApiConfiguration(builder.Configuration);
 
-app.MapControllers();
+builder.Services.AddJwtConfiguration(builder.Configuration);
+
+builder.Services.AddSwaggerConfiguration();
+
+builder.Services.RegisterServices();
+
+
+
+//App builder
+var app = builder.Build();
+
+app.UseApiConfiguration(app.Environment);
+app.UseSwaggerConfiguration();
 
 app.Run();

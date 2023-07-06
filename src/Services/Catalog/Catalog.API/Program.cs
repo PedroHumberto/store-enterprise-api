@@ -30,7 +30,6 @@ builder.Services.RegisterServices();
 
 
 //App builder
-
 var app = builder.Build();
 
 app.UseApiConfiguration(app.Environment);

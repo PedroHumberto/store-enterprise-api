@@ -23,7 +23,7 @@ namespace StoreEnterprise.Clients.API.Models
         public string City { get; private set; }
         public string State { get; private set; }
         public Guid ClientId { get; private set; }
-        public Client Cliente { get; private set; }
+        public Client Client { get; private set; }
 
     }
 }
