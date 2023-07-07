@@ -1,3 +1,4 @@
+using MediatR;
 using StoreEnterprise.Clients.API.Configuration;
 using StoreEnterprise.WebAPI.CORE.Identity;
 
@@ -23,6 +24,8 @@ builder.Services.AddApiConfiguration(builder.Configuration);
 builder.Services.AddJwtConfiguration(builder.Configuration);
 
 builder.Services.AddSwaggerConfiguration();
+
+builder.Services.AddMediatR(typeof(Program));
 
 builder.Services.RegisterServices();
 
