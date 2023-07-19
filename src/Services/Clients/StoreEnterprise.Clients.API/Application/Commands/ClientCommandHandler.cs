@@ -8,28 +8,30 @@ namespace StoreEnterprise.Clients.API.Application.Commands
     
     public class ClientCommandHandler : CommandHandler, IRequestHandler<RegisterClientCommand, ValidationResult>
     {
+        private readonly IClientRepository _clientRepository;
+
+        public ClientCommandHandler(IClientRepository clientRepository)
+        {
+            _clientRepository = clientRepository;
+        }
 
         public async Task<ValidationResult> Handle(RegisterClientCommand message, CancellationToken cancellationToken)
         {
             //validar comando
             if (!message.IsValid()) return message.ValidationResult;
 
-            //validações de negocio
-
             var client = new Client(message.Id, message.Name, message.Email, message.Cpf);
-
+            //validações de negocio
+            var clientExist = await _clientRepository.GetFromCpf(client.Cpf.Number);
             
-            //presiste na base
-
-            /*
-            if (true)//se já existe cliente
+            if (clientExist != null)//se já existe cliente
             {
-                AddError("This CPF already exist");
+                AddError("This CPF is already in use");
                 return ValidationResult;
-            }*/
-            
-            return message.ValidationResult;
+            }
 
+            //persiste na base            
+            return await PersistData(_clientRepository.UnitOfWork);
         }
 
     }
