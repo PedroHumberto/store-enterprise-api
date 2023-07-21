@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj": {}
+    "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj": {}
   },
   "projects": {
-    "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj": {
+    "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
+        "projectUniqueName": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
         "projectName": "Core.APP",
-        "projectPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
+        "projectPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\obj\\",
+        "outputPath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

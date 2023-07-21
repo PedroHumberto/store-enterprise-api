@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AKChr929OiziJ5LXd+UnpqV20+Kr36sCwEeYL7M+jXz4cwKslswyO0G1haMuSGtQaZ7kY1VTyhJUVF/+4G3nPw==",
+  "dgSpecHash": "pV2UCnEr3qG+/dM0FR8MiEiFx9EB7af4scsTsgYxsS1UKOsprPHraBP60AWE+Z3OYtiV6zMr5VTcUmYGyTkTVg==",
   "success": true,
-  "projectFilePath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
+  "projectFilePath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Building Blocks\\Core\\Core.APP\\Core.APP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\fluentvalidation\\11.5.0\\fluentvalidation.11.5.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"

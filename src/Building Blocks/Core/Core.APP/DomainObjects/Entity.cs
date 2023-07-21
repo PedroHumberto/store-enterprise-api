@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.APP.Messages;
 
 namespace Core.APP.DomainObjects
 {
@@ -10,6 +11,32 @@ namespace Core.APP.DomainObjects
     {
         public Guid Id { get; set; }
 
+        protected Entity()
+        {
+            Id = Guid.NewGuid();
+        }
+
+        private List<Event> _events;
+
+        //Só posso ler essa coleção, não pode adicionar, é uma lista de somente de leitura
+        public IReadOnlyCollection<Event> Events => _events?.AsReadOnly();
+
+        public void AddEvent(Event myEvent)
+        {
+            //se a notificação não existe, é criada uma lista nova e adiciona o evento.
+            _events = _events ?? new List<Event>();
+            _events.Add(myEvent);
+        }
+        public void RemoveEvent(Event eventItem)
+        {
+            _events?.Remove(eventItem);
+        }
+        public void CleanEvents()
+        {
+            _events?.Clear(); 
+        }
+
+        #region (Equals)
         public override bool Equals(object obj)
         {
             var compareTo = obj as Entity;
@@ -45,6 +72,7 @@ namespace Core.APP.DomainObjects
         {
             return $"{GetType().Name} [Id={Id}]";
         }
+        #endregion
     }
 
 

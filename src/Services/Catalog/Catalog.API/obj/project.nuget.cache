@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y5iny5EMYK7Z2CbGH4HbHBZ5w7ywkSvPcs8E/y8Na5oX1nrQvwiVdNye4Rmx/MTExfY640GGEwKcxZGbnyeN+g==",
+  "dgSpecHash": "cxsGkPEMilnIg1f/14S/KBES8gp2P8qEE/kD8bL74Tv2moSdnw+vc8JSt/PYZPAFl2mXb0b85n5+WIKp6wUfBg==",
   "success": true,
-  "projectFilePath": "d:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+  "projectFilePath": "D:\\Programming\\ASP.NET\\PORTFOLIO\\store_app\\StoreEnterpriseApp\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,6 +1,7 @@
 using Core.APP.Messages;
 using FluentValidation.Results;
 using MediatR;
+using StoreEnterprise.Clients.API.Application.Events;
 using StoreEnterprise.Clients.API.Models;
 
 namespace StoreEnterprise.Clients.API.Application.Commands
@@ -30,9 +31,15 @@ namespace StoreEnterprise.Clients.API.Application.Commands
                 return ValidationResult;
             }
 
-            //persiste na base        
+            
+
             _clientRepository.AddClient(client);
-    
+
+            //evento
+            client.AddEvent(new ClientRegisteredEvent(message.Id, message.Name, message.Email, message.Cpf));
+            
+            //persiste na base        
+
             return await PersistData(_clientRepository.UnitOfWork);
         }
 
