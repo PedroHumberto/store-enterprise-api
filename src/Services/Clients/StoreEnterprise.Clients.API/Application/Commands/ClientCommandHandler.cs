@@ -30,7 +30,9 @@ namespace StoreEnterprise.Clients.API.Application.Commands
                 return ValidationResult;
             }
 
-            //persiste na base            
+            //persiste na base        
+            _clientRepository.AddClient(client);
+    
             return await PersistData(_clientRepository.UnitOfWork);
         }
 
